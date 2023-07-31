@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact Details</title>
+
+        <script type="application/javascript">
+            
+            // Check if any data has been entered
+            function checkdata() { 
+                var username = document.getElementById("name");
+                var email = document.getElementById("email");
+
+                if ((username.value == "") && (email.value == "")) { 
+                    alert("Nothing has been entered");
+                    return false;
+                }
+                if (username.value == "") { 
+                    alert("Please enter the name");
+                    return false;
+                }
+                if (email.value == "") { 
+                    alert("Please enter the email");
+                    return false;
+                }
+                
+                return true;
+                
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <h2>Enter your contact details:</h2>
+
+        <form id="form1" onsubmit="return checkdata()">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </body>
+</html>

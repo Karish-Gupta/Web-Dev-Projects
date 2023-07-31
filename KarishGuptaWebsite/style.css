@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(168, 165, 165);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 100%;
+    font-family: "Times New Roman", Times, serif, sans-serif;
+  }
+  
+  .title-head {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  
+  .subhead {
+    font-size: 15px;
+    color: white;
+    text-align: left;
+
+  }
